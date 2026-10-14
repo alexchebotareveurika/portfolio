@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Переходы — Александр Чеботарев</title>
+  <link rel="icon" href="favicon.png"><link rel="stylesheet" href="page-transitions.css">
+  <script defer src="vendor/gsap.min.js"></script><script defer src="page-transitions.js"></script>
+</head>
+<body>
+  <header class="demo-toolbar"><a href="index.html">Александр Чеботарев</a><span>Переходы между страницами</span><a href="index.html">Вернуться к сайту ↗</a></header>
+  <main>
+    <div class="demo-heading"><h1>Четыре способа<br><em>сменить сцену.</em></h1><p>Выбери вариант и нажми «Обо мне» в макете.<br>Можно переключаться обратно и повторять переход.</p></div>
+    <nav class="directions" aria-label="Варианты переходов">
+      <button type="button" data-direction="sheet" aria-pressed="true"><span>01</span> Смена листа</button>
+      <button type="button" data-direction="curtain" aria-pressed="false"><span>02</span> Синяя шторка</button>
+      <button type="button" data-direction="circle" aria-pressed="false"><span>03</span> От точки клика</button>
+      <button type="button" data-direction="type" aria-pressed="false"><span>04</span> Типографика</button>
+    </nav>
+    <div class="preview" aria-label="Интерактивный макет портфолио">
+      <header class="preview-menu"><span class="name">Александр Чеботарев</span><nav aria-label="Страницы макета"><button type="button" data-page="projects" aria-pressed="true">Проекты</button><button type="button" data-page="about" aria-pressed="false">Обо мне</button></nav><span class="preview-contact">EN <span>Написать мне</span></span></header>
+      <div class="scene-stack">
+        <section class="scene scene-projects" data-scene="projects">
+          <div class="project-images" data-reveal><img src="assets/covers/credo.webp" width="1000" height="600" alt="Credo"><img src="assets/covers/dl-games.webp" width="1000" height="600" alt="DL Games"><img src="assets/covers/one-price-coffee.webp" width="1000" height="600" alt="One price coffee"></div>
+          <div class="project-heading"><h2 data-transition-title>Проекты</h2><p data-reveal>8 лет создаю диджитал<br><em>для федеральных брендов.</em></p><span data-reveal>01 / 10</span></div>
+        </section>
+        <section class="scene scene-about" data-scene="about" aria-hidden="true" inert>
+          <div class="about-copy"><h2 data-transition-title>Обо мне</h2><p class="about-name" data-reveal>Александр<br>Чеботарев.</p><p class="about-description" data-reveal>UX/UI дизайн и арт-дирекшн.<br>Логика, характер и внимание к деталям.</p></div>
+          <figure data-reveal><img src="assets/portrait.jpg" width="2252" height="3000" alt="Александр Чеботарев"></figure>
+        </section>
+        <div class="blue-curtain" aria-hidden="true"></div><div class="type-ghost" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="demo-footer"><p id="direction-description" aria-live="polite">Новый лист поднимается снизу, предыдущий мягко отступает. Глубина за счёт разницы скоростей.</p><button type="button" id="play">Показать переход ↗</button></div>
+    <p class="demo-status" role="status" aria-live="polite">Смена листа · Проекты</p>
+  </main>
+</body>
+</html>

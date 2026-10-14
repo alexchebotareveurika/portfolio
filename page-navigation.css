@@ -1,0 +1,12 @@
+@view-transition{navigation:auto}
+::view-transition-group(root){animation-duration:1.2s}
+::view-transition-image-pair(root){isolation:isolate}
+::view-transition-old(root){mix-blend-mode:normal;animation:portfolio-sheet-out 1.2s cubic-bezier(.65,0,.25,1) both;transform-origin:50% 50%}
+::view-transition-new(root){mix-blend-mode:normal;animation:portfolio-sheet-in 1.2s cubic-bezier(.65,0,.25,1) both;box-shadow:0 -24px 70px #20211f15}
+@keyframes portfolio-sheet-out{from{transform:translateY(0) scale(1)}to{transform:translateY(-16vh) scale(.96)}}
+@keyframes portfolio-sheet-in{from{transform:translateY(100vh)}to{transform:translateY(0)}}
+.navigation-sheet{position:fixed;inset:0;z-index:1000;background:#fcfcfa;box-shadow:0 -24px 70px #20211f15;pointer-events:auto}
+.navigation-sheet iframe{display:block;width:100vw;height:100vh;border:0;background:#fcfcfa;pointer-events:none}
+.sheet-outgoing .hero-scroll-scene[style*="position: fixed"]{position:absolute!important;transform:translateY(var(--sheet-pin-offset))!important}
+html.is-page-leaving{overflow:hidden}
+@media(prefers-reduced-motion:reduce){@view-transition{navigation:none}::view-transition-old(root),::view-transition-new(root){animation:none}}

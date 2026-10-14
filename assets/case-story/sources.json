@@ -1,0 +1,203 @@
+﻿[
+    {
+        "value":  [
+                      {
+                          "file":  "assets/case-story/gdg-tablet.png",
+                          "fileKey":  "ms77IZmr4dlUBXKbJxlpa3",
+                          "nodeId":  "3785:50359",
+                          "width":  768,
+                          "height":  1033
+                      },
+                      {
+                          "file":  "assets/case-story/credo-reviews.png",
+                          "fileKey":  "DavEKtpoUjiTYIJVMvR3ES",
+                          "nodeId":  "6970:24761",
+                          "width":  920,
+                          "height":  781
+                      },
+                      {
+                          "file":  "assets/case-story/gdg-theme.png",
+                          "fileKey":  "ms77IZmr4dlUBXKbJxlpa3",
+                          "nodeId":  "3785:50313",
+                          "width":  1280,
+                          "height":  1242
+                      },
+                      {
+                          "file":  "assets/case-story/credo-mobile.png",
+                          "fileKey":  "DavEKtpoUjiTYIJVMvR3ES",
+                          "nodeId":  "5747:8921",
+                          "width":  375,
+                          "height":  812
+                      },
+                      {
+                          "file":  "assets/case-story/credo-catalog.png",
+                          "fileKey":  "DavEKtpoUjiTYIJVMvR3ES",
+                          "nodeId":  "5747:7170",
+                          "width":  375,
+                          "height":  2087
+                      },
+                      {
+                          "file":  "assets/case-story/kids-customizer.png",
+                          "fileKey":  "T8HStpCXNUWhGnLwblIKkb",
+                          "nodeId":  "2049:20810",
+                          "width":  1512,
+                          "height":  982
+                      },
+                      {
+                          "file":  "assets/case-story/kids-error.png",
+                          "fileKey":  "T8HStpCXNUWhGnLwblIKkb",
+                          "nodeId":  "2049:20867",
+                          "width":  1512,
+                          "height":  1404
+                      },
+                      {
+                          "file":  "assets/case-story/kids-amount.png",
+                          "fileKey":  "T8HStpCXNUWhGnLwblIKkb",
+                          "nodeId":  "2049:23534",
+                          "width":  1512,
+                          "height":  982
+                      },
+                      {
+                          "file":  "assets/case-story/studio-clients.png",
+                          "fileKey":  "hQkkUOGB35RUuELha7sXOs",
+                          "nodeId":  "4746:65689",
+                          "width":  1280,
+                          "height":  1618
+                      },
+                      {
+                          "file":  "assets/case-story/studio-journal.png",
+                          "fileKey":  "hQkkUOGB35RUuELha7sXOs",
+                          "nodeId":  "3446:94668",
+                          "width":  1280,
+                          "height":  2647
+                      },
+                      {
+                          "file":  "assets/case-story/amtek-map.png",
+                          "fileKey":  "1UDlNClxFwiFmmkLxA2vRV",
+                          "nodeId":  "1740:37382",
+                          "width":  1512,
+                          "height":  870
+                      },
+                      {
+                          "file":  "assets/case-story/red-events.png",
+                          "fileKey":  "1Hmjl6BwlEDshR39bRx1dr",
+                          "nodeId":  "7507:12793",
+                          "width":  1512,
+                          "height":  1891
+                      },
+                      {
+                          "file":  "assets/case-story/games-gamification.png",
+                          "fileKey":  "6YcVBMkrVd3zIV0QkTLsZq",
+                          "nodeId":  "4509:18811",
+                          "width":  1920,
+                          "height":  1059
+                      },
+                      {
+                          "file":  "assets/case-story/red-building.png",
+                          "fileKey":  "1Hmjl6BwlEDshR39bRx1dr",
+                          "nodeId":  "7590:1071",
+                          "width":  1512,
+                          "height":  982
+                      },
+                      {
+                          "file":  "assets/case-story/games-about.png",
+                          "fileKey":  "6YcVBMkrVd3zIV0QkTLsZq",
+                          "nodeId":  "5963:30611",
+                          "width":  1920,
+                          "height":  2386
+                      },
+                      {
+                          "file":  "assets/case-story/club-filters.png",
+                          "fileKey":  "CuIgUmy4FwDR6VQqEqGlDo",
+                          "nodeId":  "7787:199319",
+                          "width":  375,
+                          "height":  812
+                      },
+                      {
+                          "file":  "assets/case-story/club-tutorial.png",
+                          "fileKey":  "CuIgUmy4FwDR6VQqEqGlDo",
+                          "nodeId":  "7787:201387",
+                          "width":  375,
+                          "height":  812
+                      },
+                      {
+                          "file":  "assets/case-story/club-login.png",
+                          "fileKey":  "CuIgUmy4FwDR6VQqEqGlDo",
+                          "nodeId":  "7787:191061",
+                          "width":  375,
+                          "height":  812
+                      },
+                      {
+                          "file":  "assets/case-story/club-detail.png",
+                          "fileKey":  "CuIgUmy4FwDR6VQqEqGlDo",
+                          "nodeId":  "7787:197303",
+                          "width":  375,
+                          "height":  870
+                      },
+                      {
+                          "file":  "assets/case-story/club-loading.png",
+                          "fileKey":  "CuIgUmy4FwDR6VQqEqGlDo",
+                          "nodeId":  "8343:269479",
+                          "width":  375,
+                          "height":  812
+                      },
+                      {
+                          "file":  "assets/case-story/gdg-workers-mobile.png",
+                          "fileKey":  "ms77IZmr4dlUBXKbJxlpa3",
+                          "nodeId":  "3785:50388",
+                          "width":  375,
+                          "height":  812
+                      },
+                      {
+                          "file":  "assets/case-story/studio-stack.png",
+                          "fileKey":  "hQkkUOGB35RUuELha7sXOs",
+                          "nodeId":  "4746:58687",
+                          "width":  1280,
+                          "height":  833
+                      },
+                      {
+                          "file":  "assets/case-story/opc-franchise-mobile.png",
+                          "fileKey":  "XGPyVzaUAxommwbTSNYvWg",
+                          "nodeId":  "7021:78662",
+                          "width":  360,
+                          "height":  949
+                      },
+                      {
+                          "file":  "assets/case-story/opc-menu-mobile.png",
+                          "fileKey":  "XGPyVzaUAxommwbTSNYvWg",
+                          "nodeId":  "6877:91095",
+                          "width":  360,
+                          "height":  527
+                      },
+                      {
+                          "file":  "assets/case-story/studio-tech.png",
+                          "fileKey":  "hQkkUOGB35RUuELha7sXOs",
+                          "nodeId":  "4746:58438",
+                          "width":  1280,
+                          "height":  801
+                      },
+                      {
+                          "file":  "assets/case-story/amtek-route-card.png",
+                          "fileKey":  "1UDlNClxFwiFmmkLxA2vRV",
+                          "nodeId":  "3543:20567",
+                          "width":  680,
+                          "height":  178
+                      },
+                      {
+                          "file":  "assets/case-story/credo-review-list.png",
+                          "fileKey":  "DavEKtpoUjiTYIJVMvR3ES",
+                          "nodeId":  "5747:9130",
+                          "width":  375,
+                          "height":  812
+                      }
+                  ],
+        "Count":  27
+    },
+    {
+        "file":  "assets/case-story/gdg-dark.png",
+        "fileKey":  "ms77IZmr4dlUBXKbJxlpa3",
+        "nodeId":  "3785:50300",
+        "width":  1280,
+        "height":  1242
+    }
+]

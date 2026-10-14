@@ -1,0 +1,28 @@
+.amtek-mark{width:43%;gap:0}.amtek-mark img{width:50%}
+.cover-dl-studio{background:radial-gradient(ellipse at 60% 40%,#48315f,#151020 73%)}
+.studio-sculpture{position:relative;width:61%;aspect-ratio:124/56;filter:drop-shadow(0 10px 16px #06020c88)}
+.studio-sculpture img{position:absolute;width:100%;height:auto;left:0;top:0}
+.studio-depth{transform:translate(4%,10%);filter:brightness(.28) sepia(.8) saturate(6) hue-rotate(210deg)}
+.cover-dl-games{background:#ede7f1}
+.game-portal{position:absolute;width:64%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 32% 24%,#ffffffcc,#dea7ef 45%,#a749c9 73%,#712786);box-shadow:inset -6px -8px 14px #61278544,inset 4px 5px 12px #ffffffbb;top:10%;left:18%}
+.game-character{position:absolute;width:47%;top:23%;left:27%;transform:none;filter:drop-shadow(0 8px 8px #5c366622)}
+.game-spark{position:absolute;color:#f9f5ff;font-size:7cqw;line-height:1}.spark-one{top:21%;right:21%}.spark-two{bottom:22%;left:23%;font-size:4cqw}
+.cover-red-path{background:#e9e5df}
+.cluster-fragment{position:absolute;right:11%;top:17%;width:62%;height:67%;overflow:hidden;border-radius:42% 3px 3px 3px}
+.cluster-fragment img{width:100%;height:100%;object-fit:cover;object-position:64% 21%;filter:saturate(.2)}
+.red-sign{position:absolute;width:29%;left:11%;top:29%;height:auto;filter:drop-shadow(0 3px 0 #e9e5df)}
+.drive-scene{position:absolute;width:100%;height:100%;object-fit:cover}.cover-credo{background:#e4edf3}
+.cover-global-digital{background:radial-gradient(ellipse at 90% 10%,#d4e4fc,#ebeff3 65%)}
+.dashboard-module{width:86%;overflow:hidden;border-radius:6px;box-shadow:0 6px 15px #0d326214}
+.dashboard-module img{display:block;width:100%;height:auto}
+.cover-mens-club{background:radial-gradient(ellipse at 65% 20%,#494440,#1c1d1d 77%)}
+.club-pass{position:relative;width:72%;aspect-ratio:1.586;border-radius:8px;background:linear-gradient(120deg,#3d3a36,#222322 48%,#343330);border:1px solid #af977056;box-shadow:0 12px 20px #0003;overflow:hidden}
+.club-pass:after{content:"";position:absolute;width:78%;height:180%;top:-53%;left:48%;background:linear-gradient(90deg,transparent,#fff08,transparent);transform:rotate(28deg)}
+.club-pass>img{position:absolute;left:11%;top:16%;width:21%;height:auto}
+.pass-chip{position:absolute;left:12%;bottom:23%;width:15%;height:17%;border:1px solid #bcaa8799;border-radius:3px;background:linear-gradient(110deg,#9e9073,#d9caaa,#8f8167);display:flex;align-items:center;justify-content:space-evenly;overflow:hidden}
+.pass-chip i{height:100%;width:1px;background:#7c6d54}.pass-line{position:absolute;right:11%;bottom:25%;height:1px;width:25%;background:#a8916a88}
+.cover-myshyak{background:#dfded9 url(assets/curated-v2/mineral-ground.png) center/cover}
+.mineral-catalog{width:83%;overflow:hidden;border-radius:4px;box-shadow:0 7px 20px #24232120}
+.mineral-catalog img{width:100%;height:auto}
+
+.cluster-fragment img{position:absolute;width:180%;height:auto;max-width:none;left:-37%;top:-3%;object-fit:initial}.red-sign{width:35%;left:8%;top:26%}

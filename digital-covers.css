@@ -1,0 +1,27 @@
+/* Macro interface art direction: one source fragment, one accent plane. */
+body{background:#f4f4f1}
+.interface-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:34px 24px}
+.interface-cover{isolation:isolate;display:block;background:#101215;perspective:1000px}
+.interface-cover:before{display:none}
+.interface-cover:after{content:"";position:absolute;z-index:-1;left:30%;top:28%;width:82%;height:83%;background:var(--accent);border-radius:12px;transform:rotate(-8deg)}
+.screen{position:absolute;left:22%;top:19%;width:99%;aspect-ratio:1.25;border-radius:10px;box-shadow:0 20px 48px #0004;transform:rotate(-8deg);transform-origin:50% 60%;background:#fff}
+.screen img{height:auto;width:100%;object-fit:initial;max-width:none}
+.amtek .screen img{width:136%;margin-left:-3%;margin-top:-18%}
+.studio .screen{aspect-ratio:1.25;background:#090919}
+.studio .screen img{width:146%;margin-left:-7%;margin-top:-12%}
+.games .screen{aspect-ratio:1.25;background:#f1f1f1}
+.games .screen img{width:188%;margin-left:-4%;margin-top:-116%}
+.cover-red-path .screen img{width:151%;margin-left:-28%;margin-top:-6%}
+.credo .screen img{width:150%;margin-left:-18%;margin-top:-14%}
+.cover-global-digital .screen{aspect-ratio:1.25}
+.cover-global-digital .screen img{width:172%;margin-left:-13%;margin-top:-21%}
+.mobile .screen{width:65%;left:37%;top:17%;aspect-ratio:.74;border-radius:12px}
+.mobile .screen img{width:100%;margin-top:-28%}
+.cover-kozikhinsky .screen img{width:143%;margin-left:-21%;margin-top:-4%}
+.tinted .interface-cover{background:var(--tone)}
+.tinted .screen{box-shadow:0 18px 45px #17202022}
+.detail-art .interface-cover{max-height:78vh}
+@media(max-width:1100px){.interface-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.interface-grid{grid-template-columns:1fr}}
+
+.interface-cover:after{left:17%;top:15%;width:99%;height:84%;transform:rotate(-8deg)}.credo .screen img{margin-left:0}.studio .screen img{width:128%;margin-left:-4%}

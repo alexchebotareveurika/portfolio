@@ -1,0 +1,24 @@
+﻿.minimal-cover{position:relative;display:grid;place-items:center;width:100%;height:100%;aspect-ratio:4/3;overflow:hidden;container-type:inline-size;background:#efeee8;color:#272a27}
+.cover-signature{display:block;font-family:Inter,Arial,sans-serif;font-size:21cqw;line-height:1.1;letter-spacing:-.075em;font-weight:400;transform:translateY(-2%)}
+.cover-red-path{background:#f0eee8;color:#d34b33}.cover-sign{display:block;width:23%;height:auto}
+.cover-credo{background:#e9ecec;color:#292d2f}.cover-credo .cover-signature{font-size:18cqw;letter-spacing:-.06em}
+.cover-global-digital{background:#e6eaf0;color:#354861}.cover-global-digital .cover-signature{font-size:21cqw;letter-spacing:-.065em}
+.cover-mens-club{background:#ebe7df;color:#474138}.cover-mens-club .cover-signature{font-family:Georgia,'Times New Roman',serif;font-size:25cqw;font-style:italic;letter-spacing:-.06em}
+.cover-kozikhinsky{background:#eeede8;color:#50534a}.cover-kozikhinsky .cover-signature{font-family:Georgia,'Times New Roman',serif;font-size:25cqw;letter-spacing:-.08em;font-weight:400}
+.gallery-stage .intro-project-image:has(.minimal-cover){padding:0;background:transparent;position:relative}.gallery-stage .intro-project-image>.minimal-cover{position:absolute;inset:0}
+.cover-amtek{background:#e6ebe5;color:#344d41}.cover-amtek .cover-signature{font-size:17cqw;letter-spacing:-.06em}.cover-dl-studio{background:#eae7f0;color:#4a415b}.cover-dl-studio .cover-signature{font-size:15cqw;letter-spacing:-.06em}.cover-dl-games{background:#f0e9df;color:#61513f}.cover-dl-games .cover-signature{font-size:15cqw;letter-spacing:-.06em}
+.gallery-cover-art{display:block;width:100%;height:100%;overflow:hidden}
+/* Soft tonal cover grounds; multiply keeps the supplied artwork texture. */
+.minimal-cover:has(.gallery-cover-art){isolation:isolate}
+.gallery-cover-art{mix-blend-mode:multiply}
+.cover-red-path{background:#fae4df}
+.cover-credo{background:#e5e9ee}
+.cover-global-digital{background:#e1eaff}
+.cover-mens-club{background:#f0e7db}
+.cover-kozikhinsky{background:#deeee7}
+.cover-amtek{background:#e3ebff}
+.cover-dl-studio{background:#eee4ff}
+.cover-dl-games{background:#f4e2f5}
+
+
+.gallery-cover-image{display:block;width:100%;height:100%;object-fit:contain;mix-blend-mode:normal;pointer-events:none}

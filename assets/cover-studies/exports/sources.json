@@ -1,0 +1,50 @@
+[
+  {
+    "id": "amtek",
+    "name": "Амтек",
+    "figma": "https://www.figma.com/design/1UDlNClxFwiFmmkLxA2vRV/?node-id=1740-40239",
+    "motif": "Контейнерные модули и синий из главной страницы Амтек."
+  },
+  {
+    "id": "dl-studio",
+    "name": "dl.studio",
+    "figma": "https://www.figma.com/design/hQkkUOGB35RUuELha7sXOs/?node-id=4746-51768",
+    "motif": "Ступенчатый знак и фиолетовая контурная графика исходного сайта."
+  },
+  {
+    "id": "dl-games",
+    "name": "dl.games",
+    "figma": "https://www.figma.com/design/6YcVBMkrVd3zIV0QkTLsZq/?node-id=5952-9607",
+    "motif": "Петля как спокойная интерпретация цветных лент dl.games."
+  },
+  {
+    "id": "red-path",
+    "name": "Красный путь",
+    "figma": "https://www.figma.com/design/1Hmjl6BwlEDshR39bRx1dr/?node-id=7507-12571",
+    "motif": "Восьмилучевой знак из айдентики креативного кластера."
+  },
+  {
+    "id": "credo",
+    "name": "Credo",
+    "figma": "https://www.figma.com/design/DavEKtpoUjiTYIJVMvR3ES/?node-id=5747-8703",
+    "motif": "Круг, центральное отверстие и радиальные насечки отсылают к шине."
+  },
+  {
+    "id": "global-digital",
+    "name": "Global Digital Group",
+    "figma": "https://www.figma.com/design/ms77IZmr4dlUBXKbJxlpa3/?node-id=3728-11219",
+    "motif": "Модули статистики и линия хешрейта из майнингового дашборда."
+  },
+  {
+    "id": "mens-club",
+    "name": "Мужской клуб",
+    "figma": "https://www.figma.com/design/CuIgUmy4FwDR6VQqEqGlDo/?node-id=7787-192358",
+    "motif": "Клубная карта и тёплая бронза интерфейса приложения."
+  },
+  {
+    "id": "kozikhinsky",
+    "name": "Козихинский, 22",
+    "figma": "https://www.figma.com/design/mt88osyZo27EJOgUW7FqOF/?node-id=6560-104826",
+    "motif": "Арочные окна и вертикальный ритм архитектуры. Фрагмент — из опубликованного кейса; актуальный лендинг в Figma просмотрен отдельно."
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "tool": "Built-in image_gen",
+  "prompts": [
+    {
+      "id": "credo-drive",
+      "prompt": "Create a landscape 4:3 minimalist premium automotive portfolio cover. Reference1 is the actual Credo tire product: preserve its tread, silver wheel spoke design and brand details closely. Reference2 is ice material from the actual project. One large tire in dynamic three-quarter orientation, centered slightly right, moving across a smooth pale icy surface. A single sculptural crescent of clear ice with restrained frozen spray trails behind the tire low across bottom-left, conveying grip and motion. Emotion and speed through directional studio lighting and asymmetry, NOT chaotic debris. White/cool light gray palette with black rubber and cold blue-gray translucent ice. Generous clean negative space at top-left and margins, tire dominates 60% height. Photorealistic product campaign quality, crisp tire, very few ice shards, elegant smooth ground. No cars, mountains, fire, text overlays, cover title, added logos, ornamental lines, busy particles or grunge. Quiet yet energetic and technological.",
+      "refs": [
+        "C:/Users/accom/OneDrive/Документы/ChatGPT/Сайт-портфолио/portfolio/assets/curated/credo/1.png",
+        "C:/Users/accom/OneDrive/Документы/ChatGPT/Сайт-портфолио/portfolio/assets/curated-v2/credo-ice/1.jpeg"
+      ]
+    },
+    {
+      "id": "mineral-ground",
+      "prompt": "Generate ONE 4:3 landscape background asset for a minimalist technological chemistry website portfolio cover. The foreground will later contain a wide white catalog interface occupying the central 80% width and 65% height, so leave the CENTER calm and very pale light gray with subtle large-scale tonal variation, not uniform. Around the perimeter integrate two large sculptural rough graphite-gray mineral rock forms: one cropped partially beyond lower-left edge and another much smaller cropped beyond upper-right edge. Realistic angular raw stone texture and crystalline facets, refined directional studio lighting, restrained soft shadows, pale warm-gray smooth floor. Rough stone feels tangible but broad quiet central area makes UI readable. Asymmetric organic composition, restrained luxury-industrial art direction. No interface, no text, no labels, no grids, no decorative lines, no logos, no chaotic gravel or particles, no repeating texture. Only raw mineral corners and gentle uneven light. High resolution."
+    }
+  ]
+}

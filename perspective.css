@@ -1,0 +1,54 @@
+﻿.perspective-hero{position:relative;height:calc(100dvh - var(--hero-header-height,85px));min-height:0;max-height:none;margin:0 var(--gutter);isolation:isolate;container-type:size;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:minmax(0,1fr) auto;gap:0 35px;padding-bottom:clamp(16px,5cqh,60px)}
+.perspective-stage{position:relative;grid-column:1/-1;grid-row:1;width:calc(100% + 6vw);margin-left:-3vw;min-height:0;perspective:1400px;touch-action:pan-y;cursor:grab;overflow:hidden;outline-offset:-6px}
+.perspective-stage.is-dragging{cursor:grabbing}.perspective-world{position:absolute;inset:0;transform-style:preserve-3d;pointer-events:none}
+.perspective-zone{position:absolute;left:10.5vw;right:7vw;top:50%;height:min(33.792cqh,90%);transform:translateY(-50%);pointer-events:none}
+.perspective-card{position:absolute;left:50%;top:50%;width:min(412.8px,24.96vw,42.24cqh);aspect-ratio:5/3;transform-style:preserve-3d;pointer-events:auto;will-change:transform;user-select:none;-webkit-user-drag:none}
+.perspective-art{height:100%;width:100%;overflow:hidden;box-shadow:0 22px 48px #2224210b}.perspective-card .minimal-cover{height:100%;width:100%}.perspective-name{position:absolute;top:calc(100% + 12px);left:0;right:0;display:flex;justify-content:space-between;font-size:clamp(9px,2cqh,11px);color:var(--muted)}
+.perspective-caption{grid-row:2;grid-column:1;align-self:end;pointer-events:none;z-index:4;max-width:1100px}.perspective-caption h1{font-size:min(68px,4vw,9cqh);font-weight:400;line-height:1.18;letter-spacing:-.05em;margin:0}.perspective-caption h1 span{display:block;font-family:Georgia,serif;font-style:italic;letter-spacing:-.045em}
+.perspective-info{grid-row:2;grid-column:2;align-self:end;text-align:right;font-size:clamp(9px,2cqh,12px);line-height:1.6;color:var(--muted)}.perspective-total{display:block;font-size:clamp(10px,2.3cqh,13px);color:var(--ink);margin-bottom:min(16px,2cqh)}.perspective-info p{margin:0}.perspective-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.perspective-hero a:focus-visible,.perspective-stage:focus-visible{outline:2px solid var(--ink);outline-offset:5px}.perspective-hero+.case-studies{border:0;padding-top:110px}
+@media(max-width:899px){.perspective-caption{max-width:560px}.perspective-caption h1{font-size:min(46px,4.5vw,9cqh)}.perspective-card{width:min(259.2px,33.6vw,42.24cqh)}.perspective-zone{left:0;right:0}.perspective-info{font-size:clamp(9px,2cqh,10px)}.perspective-total{font-size:clamp(10px,2.3cqh,11px)}}
+@media(max-width:600px){.perspective-hero{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto auto;row-gap:min(25px,4cqh);padding-bottom:min(27px,4cqh)}.perspective-stage{width:calc(100% + var(--gutter)*2);margin-left:calc(-1*var(--gutter));perspective:1000px}.perspective-zone{left:0;right:0;height:min(34.56cqh,90%)}.perspective-card{width:min(216px,55.68vw,46.08cqh)}.perspective-caption{grid-column:1;grid-row:2;max-width:100%}.perspective-caption h1{font-size:min(34px,7.5vw,7cqh);line-height:1.17}.perspective-info{grid-column:1;grid-row:3;text-align:left;display:flex;justify-content:space-between;align-items:end}.perspective-total{margin:0}.perspective-info p{text-align:right}.perspective-hero+.case-studies{padding-top:65px}}
+
+
+.perspective-proof{font-size:clamp(11px,1vw,15px);line-height:1.55;color:var(--muted);letter-spacing:-.015em;margin:min(18px,2.5cqh) 0 0;max-width:56ch}
+.perspective-counter{display:flex;align-items:baseline;justify-content:flex-end;gap:16px;font-size:clamp(16px,1.5vw,26px);line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.045em;color:var(--ink)}
+.counter-current{display:inline-block;min-width:2ch}.counter-divider,.counter-total{color:var(--muted)}.counter-divider{opacity:.5}
+@media(max-width:899px){.perspective-caption{max-width:100%}.perspective-counter{gap:12px;font-size:20px}}
+@media(max-width:600px){.perspective-info{justify-content:flex-end}.perspective-counter{font-size:18px}.perspective-proof{font-size:12px;max-width:38ch}}
+
+
+.perspective-label{display:flex;flex-direction:row;align-items:baseline;gap:10px;min-width:0;white-space:nowrap}
+.perspective-name{align-items:baseline;gap:8px;color:var(--ink)}
+.perspective-format{font-size:9px;color:var(--muted);letter-spacing:.025em}
+
+/* Larger desktop gallery, retaining viewport height and projected spacing. */
+@media(min-width:1200px){.perspective-card{width:min(595.2px,26.88vw,51.84cqh)}.perspective-zone{height:min(41.472cqh,94%);left:3vw;right:3vw}}
+.perspective-format{flex-shrink:0;font-size:inherit}
+
+
+
+
+
+
+.perspective-card .gallery-cover-image{object-fit:cover;object-position:center}
+.perspective-card,.perspective-art,.perspective-name{-webkit-backface-visibility:hidden;backface-visibility:hidden}
+.perspective-card .gallery-cover-image{image-rendering:auto;filter:none}
+.perspective-card .gallery-cover-image{transition:transform 1.1s cubic-bezier(.22,1,.36,1);transform:scale(1)}
+.perspective-art{transition:box-shadow .85s cubic-bezier(.22,1,.36,1)}
+.perspective-name{transition:color .65s}
+.perspective-label{position:relative}
+.perspective-label:after{content:'';position:absolute;bottom:-6px;left:0;right:0;height:1px;background:#0267ff;transform:scaleX(0);transform-origin:left;transition:transform .75s cubic-bezier(.22,1,.36,1)}
+.perspective-card.is-hovered .gallery-cover-image{transform:scale(1.075)}
+.perspective-card.is-hovered .perspective-art{box-shadow:0 36px 65px #22242129}
+.perspective-card.is-hovered .perspective-name{color:#0267ff}
+.perspective-card.is-hovered .perspective-label:after{transform:scaleX(1)}
+.perspective-hero .perspective-card:focus-visible{outline:1px solid #0267ff;outline-offset:6px}
+@media(prefers-reduced-motion:reduce){.perspective-card .gallery-cover-image,.perspective-art,.perspective-name,.perspective-label:after{transition:none}.perspective-card.is-hovered .gallery-cover-image{transform:none}}
+@font-face{font-family:StudioSans;src:url('assets/fonts/Manrope.ttf') format('truetype');font-weight:200 800;font-display:swap}
+.perspective-caption h1{font-family:StudioSans,Arial,sans-serif;font-size:min(76px,4.1vw,9cqh);font-weight:500;line-height:1.12;letter-spacing:-.035em}
+.perspective-caption h1 span{font-family:inherit;font-style:normal;letter-spacing:inherit}
+.perspective-caption .headline-accent{color:#0267ff;font-weight:inherit}
+@media(max-width:899px){.perspective-caption h1{font-size:min(46px,4.5vw,9cqh)}}
+@media(max-width:600px){.perspective-caption h1{font-size:min(34px,8vw,7cqh);line-height:1.18;letter-spacing:-.025em}}
+

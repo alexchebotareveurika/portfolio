@@ -1,0 +1,1 @@
+{"name":"alexander-chebotarev-portfolio","version":"1.1.0","private":true,"scripts":{"dev":"node server.cjs","check":"node --check app.js && node --check content.js && node --check media.js && node --check server.cjs"}}

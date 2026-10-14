@@ -1,0 +1,16 @@
+{
+  "tool": "Built-in image_gen edit",
+  "reference": "../cover-studies-v2/optical-original.png",
+  "prompt": "Edit the provided optical-graphics contact sheet. Preserve its strong optical poster aesthetic, close-up scale, crisp precision linework, warped geometric forms, and EXACT four-column two-row order of eight equal landscape 4:3 covers. This is a revision of these covers, not a new unrelated design.\nREMOVE ABSOLUTELY ALL typography from EVERY cover: names, category labels, tiny numbers 01-08, Cyrillic text, Latin text, and the huge \"22\" on the bottom-right cover. No letters, digits, logos, signatures or watermarks anywhere. Remove the literal M-like monogram from the seventh card, replace it with an abstract angular pleated fold / zigzag keeping the same optical line rhythm. Last card keeps monumental arches and columns but no 22 or numeral-like shapes. Reconstruct clean graphic/background in the removed text areas, do not leave label-shaped gaps or smudges.\nUse ONE common clean warm-white background #f7f7f2 in ALL EIGHT cards. Reinterpret the cards that had solid blue grounds so their actual optical FORMS and stripes are project-colored against the white ground. White negative space and white gaps remain. No saturated solid-color background panels. Keep sophisticated dimensional flow and bold generous scale rather than tiny centered objects.\nRecolor the forms card-by-card, left to right, top row then bottom row:\n1 AMTEK optical corridor/container ribs: electric cobalt BLUE #244ff4.\n2 dl.studio stepped bend/vertical stripes: vivid VIOLET #7031f1.\n3 dl.games warped checkerboard loop: vivid MAGENTA-PINK #c849d4.\n4 red-path radial eight-ray negative-space star/flowing stripes: vivid CORAL RED #ec4d37.\n5 CREDO concentric elliptical rings: dark GRAPHITE #434d57.\n6 GDG harmonic columns/wave: bright AZURE BLUE #0865e9.\n7 private club abstract pleated zigzag/vertical ribbon: warm BRONZE #957354.\n8 Kozikhinsky architectural arches/columns: deep FOREST GREEN #163e33.\nMake the entire gallery harmonious and sophisticated: constant background, constant line crispness and approximately balanced density/visual weight, no additional colors, no textures, no photorealism, no CGI chrome, no extra ornaments. Only optical forms and negative space. Eight DISTINCT compositions from the original reference, disciplined high-impact minimal gallery. Same output aspect ratio 8:3 at high resolution, do not rearrange cells. Thin even white gutters.",
+  "projectColors": {
+    "amtek": "#244ff4",
+    "dl-studio": "#7031f1",
+    "dl-games": "#c849d4",
+    "red-path": "#ec4d37",
+    "credo": "#434d57",
+    "global-digital": "#0865e9",
+    "mens-club": "#957354",
+    "kozikhinsky": "#163e33"
+  },
+  "note": "Color references used for the image generation. Generated raster hues may vary slightly. SVG files contain raster imagery, not vector reconstruction."
+}
