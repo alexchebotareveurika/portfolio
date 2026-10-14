@@ -1,5 +1,6 @@
 (()=>{
   const key='portfolio-sheet-navigation';
+  if(location.pathname.endsWith('/about.html'))document.documentElement.classList.add('profile-boot');
   window.portfolioSheetEntry=window.name==='portfolio-sheet-preview';
   try{
     const pending=JSON.parse(sessionStorage.getItem(key)||'null');
@@ -14,7 +15,7 @@
     navigating=true;
     const target=new URL(url,location.href);
     try{sessionStorage.setItem(key,JSON.stringify({path:target.pathname+target.search,time:Date.now()}));}catch{}
-    if(matchMedia('(prefers-reduced-motion: reduce)').matches||'onpageswap' in window){location.assign(target.href);return;}
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches){location.assign(target.href);return;}
     // Prepare the real destination before moving either sheet. The frame and
     // committed document use the same layout, without another loading sequence.
     const sheet=document.createElement('div');sheet.className='navigation-sheet';sheet.setAttribute('aria-hidden','true');
@@ -26,7 +27,7 @@
       if(leaving)return;
       try{
         const doc=frame.contentDocument;
-        await Promise.all([doc.fonts.ready,...[...doc.querySelectorAll('.perspective-card img,.about-photo img')].map(img=>img.decode().catch(()=>{}))]);
+        await Promise.all([frame.contentWindow.portfolioPageReady,doc.fonts.ready,...[...doc.querySelectorAll('.perspective-card img,[data-about-image] img')].map(img=>img.decode().catch(()=>{}))]);
         if(target.hash)doc.getElementById(target.hash.slice(1))?.scrollIntoView({behavior:'instant'});
       }catch{}
       leaving=true;clearTimeout(fallback);

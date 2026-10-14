@@ -1,4 +1,5 @@
-@view-transition{navigation:auto}
+@view-transition{navigation:none}
+html.profile-boot main,html.profile-boot footer{visibility:hidden}
 ::view-transition-group(root){animation-duration:1.2s}
 ::view-transition-image-pair(root){isolation:isolate}
 ::view-transition-old(root){mix-blend-mode:normal;animation:portfolio-sheet-out 1.2s cubic-bezier(.65,0,.25,1) both;transform-origin:50% 50%}

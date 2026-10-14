@@ -132,7 +132,24 @@
     document.querySelectorAll('details').forEach(el=>el.addEventListener('toggle',()=>window.ScrollTrigger?.refresh()));
     document.querySelectorAll('.project-visual img').forEach(el=>el.addEventListener('load',()=>window.ScrollTrigger?.refresh(),{once:true}));
   }
-  render();animate();observeCases();
+  render();
+  if(document.body.dataset.page==='about'){
+    window.portfolioPageReady=Promise.all([
+      document.fonts.ready,
+      ...[...document.querySelectorAll('[data-about-image] img')].map(img=>img.decode().catch(()=>{}))
+    ]).then(()=>{
+      document.documentElement.classList.remove('profile-boot');
+      animate();observeCases();
+      // Set scrub animations to their initial scroll position before the
+      // prepared sheet is shown, rather than easing there after navigation.
+      window.ScrollTrigger?.refresh();
+      window.ScrollTrigger?.getAll().forEach(trigger=>trigger.getTween()?.progress(1));
+      return new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+    });
+  }else{
+    animate();observeCases();
+    window.portfolioPageReady=Promise.resolve();
+  }
   document.querySelector('#project-jump')?.addEventListener('change',e=>{
     const target=document.getElementById(e.target.value);if(!target)return;
     history.pushState(null,'','#'+target.id);target.scrollIntoView({behavior:reduced.matches||Math.abs(target.getBoundingClientRect().top)>innerHeight*2?'instant':'smooth'});
