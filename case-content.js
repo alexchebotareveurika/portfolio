@@ -171,11 +171,11 @@
   });
   const credo=window.portfolioCaseStories.credo;
   Object.assign(credo.ru,{
-    intro:'Промо-платформа доступной линейки шин iCon Tires: Mobile First, три стихии и интерактивный рассказ о преимуществах продукта.',
+    intro:'Промо-платформа доступной линейки шин Ikon Tyres: Mobile First, три стихии и интерактивный рассказ о преимуществах продукта.',
     role:'UX/UI и digital-концепция',
     chapters:[
       chapter('Задача и позиционирование','Рабочая лошадка с выразительным характером.',[
-        'Credo — подбренд iCon Tires в более доступном ценовом сегменте. Нужно было выстроить позиционирование практичного продукта и показать его с интересной стороны, не теряя ясности для покупателя.',
+        'Credo — подбренд Ikon Tyres в более доступном ценовом сегменте. Нужно было выстроить позиционирование практичного продукта и показать его с интересной стороны, не теряя ясности для покупателя.',
         'За разработкой шин стоят исследования и технические решения. На сайте их важно было перевести на простой язык: какие качества получает водитель, что изменилось в сцеплении и как устроены преимущества конкретной модели. Технические подробности должны были помогать выбору, а не усложнять его.'
       ],[{index:0}]),
       chapter('Визуальная концепция','Вода. Лёд. Снег.',[
@@ -204,11 +204,11 @@
     ]
   });
   Object.assign(credo.en,{
-    intro:'A promotional platform for iCon Tires’ affordable tyre range: Mobile First, three elements and an interactive explanation of product benefits.',
+    intro:'A promotional platform for Ikon Tyres’ affordable tyre range: Mobile First, three elements and an interactive explanation of product benefits.',
     role:'UX/UI and digital concept',
     chapters:[
       chapter('Challenge and positioning','A practical workhorse with a distinctive character.',[
-        'Credo is an iCon Tires sub-brand in a more affordable price segment. The task was to position a practical product and present it in an engaging way while keeping the buying experience clear.',
+        'Credo is an Ikon Tyres sub-brand in a more affordable price segment. The task was to position a practical product and present it in an engaging way while keeping the buying experience clear.',
         'Tyre development involves research and technical decisions. The website needed to translate them into accessible explanations: what drivers gain, what has changed in grip and how each model’s benefits work. Technical details needed to support the choice rather than complicate it.'
       ],[{index:0}]),
       chapter('Visual concept','Water. Ice. Snow.',[

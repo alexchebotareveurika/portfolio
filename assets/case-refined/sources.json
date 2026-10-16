@@ -1,0 +1,162 @@
+[
+  {
+    "file": "assets/case-refined/gdg-dashboard-v2.png",
+    "width": 2560,
+    "height": 1440,
+    "fileKey": "ms77IZmr4dlUBXKbJxlpa3",
+    "nodeId": "3728:11219",
+    "changes": "Extended sidebar and frame to the complete content height; 2× export."
+  },
+  {
+    "file": "assets/case-refined/gdg-payments-v2.png",
+    "width": 2560,
+    "height": 1738,
+    "fileKey": "ms77IZmr4dlUBXKbJxlpa3",
+    "nodeId": "3734:98033",
+    "changes": "Extended sidebar and moved bottom controls with the content; 2× export."
+  },
+  {
+    "file": "assets/case-refined/gdg-dialog-v2.png",
+    "width": 1281,
+    "height": 1536,
+    "fileKey": "ms77IZmr4dlUBXKbJxlpa3",
+    "nodeId": "3735:115112",
+    "changes": "Square outer frame; unavailable Inter Variable mapped to Inter in export copy; 3× export."
+  },
+  {
+    "file": "assets/case-refined/gdg-workers-light-v2.png",
+    "width": 2560,
+    "height": 2260,
+    "fileKey": "ms77IZmr4dlUBXKbJxlpa3",
+    "nodeId": "3728:68567",
+    "changes": "Extended sidebar and bottom controls; 2× export."
+  },
+  {
+    "file": "assets/case-refined/gdg-workers-dark-v2.png",
+    "width": 2560,
+    "height": 2260,
+    "fileKey": "ms77IZmr4dlUBXKbJxlpa3",
+    "nodeId": "3785:50314",
+    "changes": "Extended sidebar and bottom controls; 2× export."
+  },
+  {
+    "file": "assets/case-refined/credo-reviews-v2.png",
+    "width": 750,
+    "height": 2458,
+    "fileKey": "DavEKtpoUjiTYIJVMvR3ES",
+    "nodeId": "5747:9130",
+    "changes": "Removed empty top area; retained the complete reviews container; 2× export."
+  },
+  {
+    "file": "assets/case-refined/amtek-map-v2.png",
+    "width": 3024,
+    "height": 2174,
+    "fileKey": "1UDlNClxFwiFmmkLxA2vRV",
+    "nodeId": "1740:37380",
+    "changes": "Removed browser chrome, restored menu and full route list height; 2× export."
+  },
+  {
+    "file": "assets/case-refined/amtek-route-v2.png",
+    "width": 2040,
+    "height": 534,
+    "fileKey": "1UDlNClxFwiFmmkLxA2vRV",
+    "nodeId": "3543:20567",
+    "changes": "Square outer corners; 3× export."
+  },
+  {
+    "file": "assets/case-refined/amtek-quote-v2.png",
+    "width": 1512,
+    "height": 1066,
+    "fileKey": "1UDlNClxFwiFmmkLxA2vRV",
+    "nodeId": "2401:16925",
+    "changes": "Complete isolated quote section."
+  },
+  {
+    "file": "assets/case-refined/studio-services-v2.png",
+    "width": 1360,
+    "height": 1458,
+    "fileKey": "hQkkUOGB35RUuELha7sXOs",
+    "nodeId": "4746:55413",
+    "changes": "Complete process cards instead of a cropped fragment, with safe margins around the title."
+  },
+  {
+    "file": "assets/case-refined/studio-team-v2.png",
+    "width": 2560,
+    "height": 1546,
+    "fileKey": "hQkkUOGB35RUuELha7sXOs",
+    "nodeId": "4746:58399",
+    "changes": "Team composition replaces the technology stack; 2× export."
+  },
+  {
+    "file": "assets/case-refined/studio-navigation-v2.png",
+    "width": 2560,
+    "height": 2740,
+    "fileKey": "hQkkUOGB35RUuELha7sXOs",
+    "nodeId": "4746:58687 + 4746:61750",
+    "changes": "Complete services content with header and bottom navigation, recomposed in an export copy; 2× export."
+  },
+  {
+    "file": "assets/case-refined/opc-loyalty-v2.png",
+    "width": 1512,
+    "height": 806,
+    "fileKey": "XGPyVzaUAxommwbTSNYvWg",
+    "nodeId": "5152:83339",
+    "changes": "First loyalty screen with parrots, without browser chrome. Title line wrapping repaired in export copy."
+  },
+  {
+    "file": "assets/case-refined/kids-dates-v2.png",
+    "width": 1512,
+    "height": 2732,
+    "fileKey": "T8HStpCXNUWhGnLwblIKkb",
+    "nodeId": "2049:20775",
+    "changes": "Square outer frame; original typography and interior components preserved."
+  },
+  {
+    "file": "assets/case-refined/kids-detail-v2.png",
+    "width": 1512,
+    "height": 1884,
+    "fileKey": "T8HStpCXNUWhGnLwblIKkb",
+    "nodeId": "2049:20520",
+    "changes": "Square outer frame; original typography and interior components preserved."
+  },
+  {
+    "file": "assets/case-refined/kids-checkout-v2.png",
+    "width": 1512,
+    "height": 1136,
+    "fileKey": "T8HStpCXNUWhGnLwblIKkb",
+    "nodeId": "2049:23470",
+    "changes": "Square outer frame; original typography and interior components preserved."
+  },
+  {
+    "file": "assets/case-refined/kids-success-v2.png",
+    "width": 1512,
+    "height": 1554,
+    "fileKey": "T8HStpCXNUWhGnLwblIKkb",
+    "nodeId": "2049:20849",
+    "changes": "Square outer frame; original typography and interior components preserved."
+  },
+  {
+    "file": "assets/case-refined/kids-customizer-v2.png",
+    "width": 1512,
+    "height": 982,
+    "fileKey": "T8HStpCXNUWhGnLwblIKkb",
+    "nodeId": "2049:20810",
+    "changes": "Square outer frame; original typography and interior components preserved."
+  },
+  {
+    "file": "assets/case-refined/kids-amount-v2.png",
+    "width": 1512,
+    "height": 982,
+    "fileKey": "T8HStpCXNUWhGnLwblIKkb",
+    "nodeId": "2049:23534",
+    "changes": "Square outer frame; original typography and interior components preserved."
+  },
+  {
+    "file": "assets/case-refined/kids-error-v2.png",
+    "width": 1512,
+    "height": 1404,
+    "fileKey": "T8HStpCXNUWhGnLwblIKkb",
+    "nodeId": "2049:20867",
+    "changes": "Square outer frame; original typography and interior components preserved."
+  }
+]

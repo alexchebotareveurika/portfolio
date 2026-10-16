@@ -143,8 +143,12 @@
       // Set scrub animations to their initial scroll position before the
       // prepared sheet is shown, rather than easing there after navigation.
       window.ScrollTrigger?.refresh();
-      window.ScrollTrigger?.getAll().forEach(trigger=>trigger.getTween()?.progress(1));
-      return new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+      window.ScrollTrigger?.getAll().forEach(trigger=>{
+        const tween=trigger.getTween();
+        if(typeof tween?.progress==='function')tween.progress(1);
+      });
+      // An offscreen preview iframe can have its animation frames throttled.
+      // Readiness must resolve without waiting for those frames.
     });
   }else{
     animate();observeCases();

@@ -78,8 +78,35 @@
     {index:1,trimLeft:618,trimRight:342,trimTop:199,trimBottom:120,caption:text('Металлический мышьяк: скруглённая форма визуала. Фрагмент каталога.','Metallic arsenic: a rounded image shape. A catalogue fragment.')}
   ],'phones')]);
 
+  // Clean exports retain the complete frame and use source-resolution artwork.
+  const refined=(id,index,name,width,height,options={})=>Object.assign(media[id][index],{src:'assets/case-refined/'+name+'.png',width,height,trimLeft:0,trimRight:0,trimTop:0,trimBottom:0,...options});
+  refined('global-digital',0,'gdg-dashboard-v2',2560,1440);
+  refined('global-digital',1,'gdg-payments-v2',2560,1738);
+  refined('global-digital',2,'gdg-dialog-v2',1281,1536,{presentation:'dialog'});
+  refined('global-digital',gdgWorkers.index,'gdg-workers-light-v2',2560,2260);
+  refined('global-digital',gdgDark.index,'gdg-workers-dark-v2',2560,2260);
+  refined('credo',credoReviews.index,'credo-reviews-v2',750,2458);
+  refined('one-price-coffee',3,'opc-loyalty-v2',1512,806,{caption:text('Первый экран программы лояльности.','The loyalty programme’s first screen.')});
+  refined('kids-pizza-academy',2,'kids-dates-v2',1512,2732,{trimBottom:360});
+  refined('kids-pizza-academy',3,'kids-detail-v2',1512,1884,{trimBottom:360});
+  refined('kids-pizza-academy',4,'kids-checkout-v2',1512,1136);
+  refined('kids-pizza-academy',5,'kids-success-v2',1512,1554,{trimBottom:360});
+  refined('kids-pizza-academy',customizer.index,'kids-customizer-v2',1512,982);
+  refined('kids-pizza-academy',amount.index,'kids-amount-v2',1512,982);
+  refined('kids-pizza-academy',error.index,'kids-error-v2',1512,1404,{trimBottom:365});
+  refined('amtek',amtekMap.index,'amtek-map-v2',3024,2174);
+  refined('amtek',amtekRoute.index,'amtek-route-v2',2040,534);
+  refined('amtek',3,'amtek-quote-v2',1512,1066);
+  refined('dl-studio',studioStack.index,'studio-services-v2',1360,1458,{caption:text('Страница услуг: аналитика, проектирование и визуализация.','Services: analysis, prototyping and visual design.')});
+  refined('dl-studio',studioTech.index,'studio-team-v2',2560,1546,{caption:text('Команда: специалисты, которые работают над проектом.','The team behind the project.')});
+  const studioNavigation=add('dl-studio','unused',2560,2740,'Нижняя навигация в контексте целого экрана услуг.','Bottom navigation within the complete services screen.',{src:'assets/case-refined/studio-navigation-v2.png'});
+  block('dl-studio',2,[screen(text('Процесс и команда','Process and team'),[studioStack,studioTech]),screen(text('Переключение внутри страницы','Switching within the page'),[studioNavigation],'wide')]);
+  block('myshyak',2,[screen(text('Материалы крупным планом','Materials up close'),[
+    {index:1,trimLeft:48,trimRight:912,trimTop:199,trimBottom:321,presentation:'material',caption:text('Мышьяковая кислота.','Arsenic acid.')},
+    {index:1,trimLeft:700,trimRight:410,trimTop:220,trimBottom:335,presentation:'material',caption:text('Металлический мышьяк.','Metallic arsenic.')}
+  ])]);
+
   const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const arrow='<svg viewBox="0 0 48 24" aria-hidden="true"><path d="M1 12h44m-10-9 10 9-10 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>';
   window.CaseVisualStory={
     render(chapter,visual,language){
       if(!chapter.visualStory)return null;
@@ -88,9 +115,9 @@
         const title=`<p class="story-visual-title" data-case-reveal>${value(b.title)}</p>`;
         if(b.type==='screens')return `<div class="story-visual-group">${title}<div class="editorial-gallery story-gallery story-gallery-${b.layout}">${visual({media:b.items,layout:b.layout})}</div></div>`;
         if(b.type==='flow')return `<figure class="story-exhibit">${title}<ol class="story-flow" data-case-reveal>${b.steps.map(t=>`<li><span>${value(t)}</span></li>`).join('')}</ol></figure>`;
-        if(b.type==='shift')return `<figure class="story-exhibit">${title}<div class="story-shift" data-case-reveal><div><p>${value(b.before)}</p><span>${value(b.beforeNote)}</span></div>${arrow}<div><p>${value(b.after)}</p><span>${value(b.afterNote)}</span></div></div></figure>`;
+        if(b.type==='shift')return `<figure class="story-exhibit">${title}<div class="story-shift" data-case-reveal><div><small>${ru?'Отправная точка':'Starting point'}</small><p>${value(b.before)}</p><span>${value(b.beforeNote)}</span></div><div><small>${ru?'Развитие':'Development'}</small><p>${value(b.after)}</p><span>${value(b.afterNote)}</span></div></div></figure>`;
         if(b.type==='award')return `<figure class="story-exhibit story-award" data-case-reveal><strong>${escape(b.value)}</strong><div><p>${value(b.title)}</p><span>${value(b.detail)}</span></div></figure>`;
-        if(b.type==='themes')return `<figure class="story-exhibit story-themes" data-theme="light">${title}<div class="story-theme-controls" aria-label="${ru?'Цветовая тема макета':'Layout colour theme'}"><button type="button" data-story-theme="light" aria-pressed="true">${ru?'Светлая':'Light'}</button><button type="button" data-story-theme="dark" aria-pressed="false">${ru?'Тёмная':'Dark'}</button><span>${ru?'Те же данные и структура':'The same data and structure'}</span></div><div class="story-theme-picture" data-variant="light">${visual({media:[b.light]})}</div><div class="story-theme-picture" data-variant="dark" hidden>${visual({media:[b.dark]})}</div><div class="story-theme-palette" aria-hidden="true"><i></i><i></i><i></i><i></i></div></figure>`;
+        if(b.type==='themes')return `<figure class="story-exhibit story-themes" data-theme="light">${title}<div class="story-theme-controls" aria-label="${ru?'Цветовая тема макета':'Layout colour theme'}"><button type="button" data-story-theme="light" aria-pressed="true">${ru?'Светлая':'Light'}</button><button type="button" data-story-theme="dark" aria-pressed="false">${ru?'Тёмная':'Dark'}</button><span>${ru?'Те же данные и структура':'The same data and structure'}</span></div><div class="story-theme-picture" data-variant="light">${visual({media:[b.light]})}</div><div class="story-theme-picture" data-variant="dark" hidden>${visual({media:[b.dark]})}</div></figure>`;
         if(b.type==='layouts')return `<figure class="story-exhibit">${title}<div class="story-layouts" data-case-reveal>${['left','right','center'].map((position,i)=>`<div class="story-layout story-layout-${position}"><span class="story-layout-text">${ru?'Текст':'Text'}</span><span class="story-layout-object">3D</span><small>${ru?['Текст слева','Текст справа','Центральная композиция'][i]:['Text on the left','Text on the right','Centred composition'][i]}</small></div>`).join('')}</div></figure>`;
         if(b.type==='worlds')return `<figure class="story-exhibit story-worlds">${title}<svg viewBox="0 0 1200 340" role="img" aria-label="${ru?'Три переплетающиеся линии как игровые вселенные':'Three interwoven lines representing game universes'}"><path d="M-30 220C210 350 280 20 520 140S890 380 1230 130" stroke="#0267ff"/><path d="M-30 150C200 0 310 300 540 230S930 0 1230 220" stroke="#7b3be8"/><path d="M-30 240C220 20 330 200 560 120S920 320 1230 100" stroke="#ffc928"/></svg></figure>`;
         return '';

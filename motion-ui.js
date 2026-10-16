@@ -30,7 +30,7 @@
     document.addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;if(!shown){shown=true;pos.x=e.clientX;pos.y=e.clientY;document.documentElement.classList.add('cursor-ready');}xTo(e.clientX);yTo(e.clientY);cursor.style.opacity='1';
       const el=e.target,zone=document.querySelector('.perspective-zone'),r=zone?.getBoundingClientRect(),inGallery=el.closest('.perspective-stage')&&r&&e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom;
       const interactive=el.closest('a,button,summary,select'),text=el.closest('input,textarea');let mode='default';
-      if(document.querySelector('.perspective-stage.is-dragging'))mode='drag';else if(text)mode='text';else if(interactive)mode='link';else if(inGallery)mode='gallery';cursor.dataset.mode=mode;label.textContent=mode==='link'?'↗':mode==='gallery'||mode==='drag'?'↔':'';
+      if(document.querySelector('.perspective-stage.is-dragging'))mode='drag';else if(text)mode='text';else if(interactive)mode=interactive.closest('.resume-link')?'download':'link';else if(inGallery)mode='gallery';cursor.dataset.mode=mode;if(mode==='download'){label.innerHTML='<svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2v10m-4-4 4 4 4-4M3 13v4h14v-4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>';}else label.textContent=mode==='link'?'↗':mode==='gallery'||mode==='drag'?'↔':'';
     },{passive:true});
     document.addEventListener('pointerout',e=>{if(!e.relatedTarget)cursor.style.opacity='0';});window.addEventListener('blur',()=>{cursor.style.opacity='0';document.documentElement.classList.remove('cursor-ready');shown=false;});
   }
